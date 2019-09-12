@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>Framework7</title>
+<link href="css/framework7.min.css" rel="stylesheet">
+<link href="css/f7-icons.css" rel="stylesheet">
+<link href="css/material-icons.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+      
+        <section class="panel panel-left panel-cover">
+            
+            <div class="block bg-blue-menu">
+                <i class="circle-menu">DW</i>
+                <h2 class="block-title">Diseño Web II</h2>
+            </div>
+            
+            <div class="list media-list">
+                <ul>
+                    <li>
+                        <a href="/home/" class="item-link item-content panel-close">
+                            <div class="item-media">
+                                <i class="material-icons">home</i>
+                            </div>
+                            <div class="item-inner">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/listas/" class="item-link item-content panel-close">
+                            <div class="item-media">
+                                <i class="material-icons">event</i>
+                            </div>
+                            <div class="item-inner">
+                                Projects/Listas
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/card/" class="item-link item-content panel-close">
+                            <div class="item-media">
+                                <i class="material-icons">event</i>
+                            </div>
+                            <div class="item-inner">
+                                Card
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/accordion/" class="item-link item-content panel-close">
+                            <div class="item-media">
+                                <i class="material-icons">event</i>
+                            </div>
+                            <div class="item-inner">
+                                Accordion
+                            </div>
+                        </a>
+                    </li>
+                </ul>            
+            </div>
+            
+        </section>
+        
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main view-init">
+        <!-- Initial Page, "data-name" contains page name -->
+        <section data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <nav class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a class="link panel-open" data-panel="left">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+              <div class="title">Diseño Web</div>
+                
+            </div>
+          </nav>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+                
+              <div class="swiper-container swiper-init" data-pagination='{"el": ".swiper-pagination"}' data-space-between="0" data-slides-per-view="0">
+                    <!-- Slides wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="img/cupcake.jpg" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        
+                    </div>
+                    <!-- Pagination, if required -->
+                    <div class="swiper-pagination"></div>
+                </div>
+              
+              <h2 class="block-title">Título de contenido</h2>
+              <div class="block block-strong">
+                  <p>Información y contenido a mostrar en la APP</p>
+                  
+                  <div class="row">
+                      <article class="col">
+                          Izquierda
+                      </article>
+                      <article class="col text-align-center text-color-orange">
+                          Derecha
+                      </article>
+                  </div>
+                    
+              </div>
+              
+              <a href="/listas/" class="link">Listas</a>
+              
+              <h2 class="block-title">Popup</h2>
+              <article class="block">
+                  <a href="#" class="link popup-open" data-popup=".popup-1">Ver Popup</a>
+              </article>
+              
+              
+          </div><!-- /page-content -->
+            
+          <!-- Los popups van después de /page-content -->   
+            <article class="popup popup-1">
+                <div class="block">
+                    <h2>Popup</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nostra massa pellentesque parturient integer ornare nulla, lacinia at arcu pretium morbi vel tempus tristique aptent dignissim elementum iaculis.</p>
+                    <a href="#" class="link popup-close">Cerrar</a>
+                </div>
+            </article>
+            
+            
+            <article class="login-screen modal-in">
+            <div class="view">
+              <div class="page">
+                <div class="page-content login-screen-content">
+                  <div class="login-screen-title">My App</div>
+                  <form>
+                    <div class="list">
+                      <ul>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Username</div>
+                            <div class="item-input-wrap">
+                              <input type="text" name="username" placeholder="Your username" required>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Password</div>
+                            <div class="item-input-wrap">
+                              <input type="password" name="password" placeholder="Your password">
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="list">
+                      <ul>
+                        <li><a class="item-link list-button login-screen-close" href="#">Sign In</a></li>
+                      </ul>
+                      <div class="block-footer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><a class="link login-screen-close" href="#">Close Login Screen</a></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+            
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="js/framework7.min.js"></script>
+    <script src="js/my-app.js"></script>
+</body>
+</html>
